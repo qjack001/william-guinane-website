@@ -12,6 +12,8 @@
         <link rel="icon" href="./favicon.png" type="image/png" />
         <link id="favicon" rel="shortcut icon" type="image/png" href="./favicon.png">
         <style>
+			/* styling for loader to avoid FOUC */
+			
 			.loading, .finished
 			{
 				pointer-events: none;
@@ -34,7 +36,10 @@
 		</style>
     </head>
 	<body>
+		<!-- hides view until the page is finished loading -->
 		<div id="loader"></div>
+		
+		<!-- main content -->
 		<section>
 			<nav>
 				<a id="logo" href="./">
@@ -55,10 +60,7 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"><path d="M10.619 16.639l-2.085-2.085 4.76-4.76H0V6.845h13.295L8.534 2.084 10.619 0l8.319 8.319-8.32 8.32z"/></svg>
 				</span>
 				<style>
-					#cab::before
-					{
-						background-image: url("./images/cab.png");
-					}
+					#cab::before { background-image: url("./images/cab.png"); }
 				</style>
 			</a>
 			<a id="jig" class="project" href="./">
@@ -68,10 +70,7 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"><path d="M10.619 16.639l-2.085-2.085 4.76-4.76H0V6.845h13.295L8.534 2.084 10.619 0l8.319 8.319-8.32 8.32z"/></svg>
 				</span>
 				<style>
-					#jig::before
-					{
-						background-image: url("./images/jig.png");
-					}
+					#jig::before { background-image: url("./images/jig.png"); }
 				</style>
 			</a>
 			<a id="pav" class="project" href="./">
@@ -81,10 +80,7 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"><path d="M10.619 16.639l-2.085-2.085 4.76-4.76H0V6.845h13.295L8.534 2.084 10.619 0l8.319 8.319-8.32 8.32z"/></svg>
 				</span>
 				<style>
-					#pav::before
-					{
-						background-image: url("./images/pav.png");
-					}
+					#pav::before { background-image: url("./images/pav.png"); }
 				</style>
 			</a>
 			<a id="all-projects" class="project" href="./">
@@ -94,6 +90,7 @@
 				</span>
 			</a>
 			<footer>
+				<!-- spans used to fill empty blocks (span.spacer removed for smaller screens) -->
 				<span class="spacer"></span>
 				<span></span>
 				<span></span>
@@ -102,6 +99,7 @@
 			</footer>
 		</section>
 		
+		<!-- hides page while document is loading, fades in when complete -->
 		<script>
             document.getElementById("loader").classList.add('loading');
             function showPage() {document.getElementById("loader").classList.add('finished');}
