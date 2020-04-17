@@ -236,6 +236,11 @@ nav a
 		-ms-grid-rows: 60px 2px 2fr 2px 1fr 2px 1fr 2px 1fr 2px auto 2px 30px;
 		grid-template-rows: 60px 2fr 1fr 1fr 1fr auto 30px;
 	}
+	
+	nav
+	{
+		overflow: hidden;
+	}
 
 	.project, #all-projects, #desc
 	{
