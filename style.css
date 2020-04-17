@@ -260,6 +260,17 @@ nav a
 	{
 		overflow: hidden;
 	}
+	
+	nav a
+	{
+		padding: 0;
+		text-align: center;
+	}
+	
+	#logo
+	{
+		padding-left: 0;
+	}
 
 	.project, #all-projects, #desc
 	{
