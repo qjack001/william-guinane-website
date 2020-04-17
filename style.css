@@ -269,7 +269,7 @@ nav a
 	
 	#logo
 	{
-		padding-left: 0;
+		text-align: left;
 	}
 
 	.project, #all-projects, #desc
