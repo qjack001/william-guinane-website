@@ -258,6 +258,8 @@ nav a
 	background: #fff;
 	gap: 2px;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+	grid-auto-rows: minmax(500px, 1fr);
 }
 
 h2
