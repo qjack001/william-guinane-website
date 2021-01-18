@@ -275,18 +275,18 @@ article
 	font-size: 1.5rem;
 	letter-spacing: 0.005em;
 	line-height: 1.8;
-	padding: 40px 20px 50px;
+	padding: 10px 20px 50px;
 }
 
 article p
 {
 	margin: 40px 0;
-	padding: 0 40px;
+	padding: 0 4%;
 }
 
 article h2, article ul, article ol, article blockquote
 {
-	padding: 0 40px;
+	padding: 0 4%;
 }
 
 article p a
