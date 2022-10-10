@@ -149,7 +149,7 @@ nav a
 	opacity: 0.4;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	background-size: cover;
+	background-size: contain;
 	-webkit-transition: opacity 0.1s cubic-bezier(0.4, 0.14, 0.3, 1);
 	-o-transition: opacity 0.1s cubic-bezier(0.4, 0.14, 0.3, 1);
 	transition: opacity 0.1s cubic-bezier(0.4, 0.14, 0.3, 1);
@@ -280,7 +280,7 @@ article
 
 article p
 {
-	margin: 40px 0;
+	margin: 20px 0;
 	padding: 0 4%;
 }
 
