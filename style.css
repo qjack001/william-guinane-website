@@ -22,13 +22,13 @@ body
 
 ::-moz-selection
 {
-	background: #415eff;
+	background: #000000;
 	color: #fff;
 }
 
 ::selection
 {
-	background: #415eff;
+	background: #000000;
 	color: #fff;
 }
 
